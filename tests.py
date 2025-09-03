@@ -3,14 +3,14 @@ sys.path.append('./src')
 
 from random_rhythms.random_rhythms import Rhythm
 
-rr = Rhythm()
-motif = rr.motif()
+r = Rhythm()
+motif = r.motif()
 assert isinstance(motif, list), "motif is not a list"
 
-rr = Rhythm(
+r = Rhythm(
     measure_size=1,
     durations=[1],
 )
-assert rr.weights == [1]
-motif = rr.motif()
-assert motif == [1]
+assert r.weights == [1], "weights not correct"
+motif = r.motif()
+assert motif == [1], "motif not correct"
