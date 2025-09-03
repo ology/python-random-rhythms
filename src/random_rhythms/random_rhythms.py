@@ -28,10 +28,7 @@ class Rhythm:
             self.weights = [ 1 for x in self.durations ]
         else:
             self.weights = weights
-        if not groups:
-            self.groups = { 1/3: 3 }
-        else:
-            self.groups = groups
+        self.groups = groups
         self.smallest = smallest
 
     def motif(self):
