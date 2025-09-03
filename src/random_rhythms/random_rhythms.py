@@ -7,7 +7,6 @@ Description: This library converts a musical duration into a
 partitioned rhythmic phrase.
 """
 
-from music21 import *
 import random
 
 class Rhythm:
