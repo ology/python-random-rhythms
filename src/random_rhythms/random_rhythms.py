@@ -23,12 +23,19 @@ from music21 import *
 import random
 
 class Rhythm:
-    def __init__(self):
-        self.measure_size = 4
-        self.durations = [ 1/4, 1/2, 1/3, 1, 3/2, 2 ]
-        self.weights = [ 1, 1, 1, 1, 1, 1 ]
-        self.groups = { 1/3: 3 }
-        self.smallest = 1/128
+    def __init__(
+            self,
+            measure_size=4,
+            durations=[1/4, 1/2, 1/3, 1, 3/2, 2],
+            weights=[1, 1, 1, 1, 1, 1],
+            groups={1/3: 3},
+            smallest=1/128
+        ):
+        self.measure_size = measure_size
+        self.durations = durations
+        self.weights = weights
+        self.groups = groups
+        self.smallest = smallest
 
     def motif(self):
         smallest = sorted(self.durations)[0]
