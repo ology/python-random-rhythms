@@ -1,5 +1,8 @@
+0.1.6 2025-09-03
+    - Show full example using music21.
+
 0.1.5 2025-09-03
-    - Remove depemndency on music21.
+    - Remove dependency on music21.
 
 0.1.4 2025-09-03
     - Do not default the groups.

@@ -37,3 +37,28 @@ rr = Rhythm(**params)
 motif = rr.motif()
 print(motif)
 ```
+
+## Full example:
+
+```python
+from music21 import *
+import random
+from random_rhythms import Rhythm
+
+r = Rhythm(measure_size=5)
+motif = r.motif()
+print(motif)
+
+sc = scale.WholeToneScale('C4')
+
+s = stream.Stream()
+s.append(meter.TimeSignature('5/4'))
+
+for d in motif:
+    k = random.choice(sc.pitches)
+    n = note.Note(k)
+    n.duration = duration.Duration(d)
+    s.append(n)
+
+s.show() # or 'midi'
+```
