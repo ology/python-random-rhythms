@@ -28,7 +28,6 @@ from random_rhythms import Rhythm
 
 ```python
 params = { # these are the defaults:
-    time_signature: '4/4',
     measure_size: 4,
     durations: [ 1/4, 1/2, 1/3, 1, 3/2, 2 ],
     weights: [ 1, 1, 1, 1, 1, 1 ],
