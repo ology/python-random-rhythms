@@ -68,5 +68,5 @@ Issues = "https://github.com/ology/python-random-rhythms/issues"
 version.attr = "random_rhythms.__version__"
 
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools >= 77.0.3"]
 build-backend = "setuptools.build_meta"

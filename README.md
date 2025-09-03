@@ -3,7 +3,7 @@ Partition a musical duration into rhythmic phrases.
 
 Usage:
 
-1. Determine the pool of durations to use the ryhthmic phrase:
+1. Determine the pool of durations to use in your rhythmic phrase:
 
 ```
 128th to 128: .03125 .0625 .125 .25 .5 1 2 4 8 16 32 64 128
@@ -21,7 +21,7 @@ Double dotted: .4375 .875 1.75 3.5 7
 2. Import the class:
 
 ```python
-from random_rhythms.random_rhythms import Rhythm
+from random_rhythms import Rhythm
 ```
 
 3. Instantiate a random-rhythm object:
