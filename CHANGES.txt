@@ -1,4 +1,7 @@
 0.1.7 2025-09-03
+    - Fix documentation example.
+
+0.1.7 2025-09-03
     - Various cleanups...
 
 0.1.6 2025-09-03
