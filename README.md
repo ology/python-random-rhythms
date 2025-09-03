@@ -54,8 +54,8 @@ s = stream.Stream()
 s.append(meter.TimeSignature('5/4'))
 
 for d in motif:
-    k = random.choice(sc.pitches)
-    n = note.Note(k)
+    p = random.choice(sc.pitches)
+    n = note.Note(p)
     n.duration = duration.Duration(d)
     s.append(n)
 
