@@ -45,7 +45,7 @@ from music21 import *
 import random
 from random_rhythms import Rhythm
 
-r = Rhythm(measure_size=5)
+r = Rhythm(measure_size=5 groups={1/3: 3})
 motif = r.motif()
 
 sc = scale.WholeToneScale('C4')
