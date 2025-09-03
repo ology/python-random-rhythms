@@ -15,6 +15,8 @@ Double dotted: .4375 .875 1.75 3.5 7
 # durations = [ 2**x+2**x/2+2**x/4 for x in range(-2, 3) ]
 ```
 
+Where `1` is a quarter-note, `0.5` is an eighth, `2` is a half-note, etc.
+
 2. Import the class:
 ```python
 from random_rhythms import Rhythm
