@@ -8,7 +8,9 @@ motif = rr.motif()
 assert isinstance(motif, list), "motif is not a list"
 
 rr = Rhythm(
+    measure_size=1,
     durations=[1],
 )
+assert rr.weights == [1]
 motif = rr.motif()
-assert isinstance(motif, list), "motif is not a list"
+assert motif == [1]
