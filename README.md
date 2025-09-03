@@ -38,7 +38,7 @@ params = { # these are the defaults:
 rr = Rhythm(**params)
 ```
 
-4. Get a motif!
+4. Get a motif:
 
 ```python
 motif = rr.motif()
