@@ -34,35 +34,35 @@ class Rhythm:
         self.groups = { 1/3: 3 }
         self.smallest = 1/128
 
-def motif(self):
-    smallest = sorted(self.durations)[0]
+    def motif(self):
+        smallest = sorted(self.durations)[0]
 
-    sum = 0
-    motif = []
-    group_num = 0
-    group_item = 0
+        sum = 0
+        motif = []
+        group_num = 0
+        group_item = 0
 
-    while sum < self.measure_size:
-        dura = random.choices(self.durations, weights=self.weights, k=1)[0]
-        if group_num:
-            group_num -= 1
-            dura = group_item
-        else:
-            if dura in self.groups:
-                group_num = self.groups[dura] - 1
-                group_item = dura
+        while sum < self.measure_size:
+            dura = random.choices(self.durations, weights=self.weights, k=1)[0]
+            if group_num:
+                group_num -= 1
+                dura = group_item
             else:
-                group_num = 0
-                group_item = 0
-        diff = self.measure_size - sum
-        if diff < smallest:
-            if diff >= self.smallest:
-                motif.append(diff)
-            break
-        if dura > diff:
-            continue
-        sum += dura
-        if sum <= self.measure_size:
-            motif.append(dura)
+                if dura in self.groups:
+                    group_num = self.groups[dura] - 1
+                    group_item = dura
+                else:
+                    group_num = 0
+                    group_item = 0
+            diff = self.measure_size - sum
+            if diff < smallest:
+                if diff >= self.smallest:
+                    motif.append(diff)
+                break
+            if dura > diff:
+                continue
+            sum += dura
+            if sum <= self.measure_size:
+                motif.append(dura)
 
-    return motif
+        return motif
