@@ -26,7 +26,7 @@ from music21 import *
 import random
 
 class Rhythm:
-    def __init__(self, board):
+    def __init__(self):
         self.time_signature = '4/4'
         self.measure_size = 4
         self.durations = [ 1/4, 1/2, 1/3, 1, 3/2, 2 ]
