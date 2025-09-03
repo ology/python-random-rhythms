@@ -32,9 +32,6 @@ class Rhythm:
             self.groups = { 1/3: 3 }
         else:
             self.groups = groups
-        print(f"d: {self.durations}")
-        print(f"w: {self.weights}")
-        print(f"g: {self.groups}")
         self.smallest = smallest
 
     def motif(self):
