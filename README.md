@@ -1,6 +1,4 @@
-# python-random-rhythms
-Musical Rhythmic Duration Partitions
-
+# Random Rhythms in Python!
 Partition a musical duration into rhythmic phrases.
 
 Usage:
