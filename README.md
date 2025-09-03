@@ -26,15 +26,15 @@ params = { # these are the defaults:
     measure_size: 4,
     durations: [ 1/4, 1/2, 1/3, 1, 3/2, 2 ],
     weights: [ 1, 1, 1, 1, 1, 1 ],
-    groups: { 1/3: 3 },
+    groups: {},
     smallest: 1/128
 }
-rr = Rhythm(**params)
+r = Rhythm(**params)
 ```
 
 4. Get a motif:
 ```python
-motif = rr.motif()
+motif = r.motif()
 print(motif)
 ```
 
