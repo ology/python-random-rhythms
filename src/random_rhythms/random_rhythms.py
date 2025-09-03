@@ -32,6 +32,7 @@ class Rhythm:
         self.durations = [ 1/4, 1/2, 1/3, 1, 2, 4 ]
         self.weights = [ 1, 1, 1, 1, 1, 1 ]
         self.groups = { 1/3: 3 }
+        self.smallest = 1/128
 
 def motif(self):
     smallest = sorted(self.durations)[0]
@@ -55,7 +56,7 @@ def motif(self):
                 group_item = 0
         diff = self.measure_size - sum
         if diff < smallest:
-            if diff >= 1/128:
+            if diff >= self.smallest:
                 motif.append(diff)
             break
         if dura > diff:
