@@ -63,4 +63,5 @@ def motif(self):
         sum += dura
         if sum <= self.measure_size:
             motif.append(dura)
+
     return motif
