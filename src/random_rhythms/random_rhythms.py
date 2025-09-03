@@ -1,7 +1,7 @@
 """
 Name: random_rhythms
 
-Abstract: Partition a musical duration into rhythmic phrases.
+Abstract: Partition a musical duration into a rhythmic phrase.
 
 Description: This library converts a musical duration into a
 partitioned rhythmic phrase.

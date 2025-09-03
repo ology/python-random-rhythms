@@ -8,7 +8,7 @@
 # This is the basic information about your project.  Change the details here
 # to be about your project instead of "pkgsample".
 name = "random_rhythms"
-description = "Partition a musical duration into rhythmic phrases"
+description = "Partition a musical duration into a rhythmic phrase"
 
 # You can change this to README.md if you prefer.
 readme = "README.md"
