@@ -47,7 +47,6 @@ from random_rhythms import Rhythm
 
 r = Rhythm(measure_size=5)
 motif = r.motif()
-print(motif)
 
 sc = scale.WholeToneScale('C4')
 
