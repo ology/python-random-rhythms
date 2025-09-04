@@ -1,7 +1,7 @@
 # Random Rhythms in Python!
 Partition a musical duration into rhythmic phrases.
 
-Usage:
+## Usage:
 
 1. Determine the pool of durations to use in your rhythmic phrase:
 ```
