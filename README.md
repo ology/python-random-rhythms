@@ -39,7 +39,7 @@ motif = r.motif()
 print(motif)
 ```
 
-## Full example:
+## Musical example:
 
 ```python
 from music21 import *
