@@ -24,11 +24,11 @@ from random_rhythms import Rhythm
 3. Instantiate a random-rhythm object:
 ```python
 params = { # these are the defaults:
-    measure_size: 4,
-    durations: [ 1/4, 1/2, 1/3, 1, 3/2, 2 ],
+    measure_size: 4, # in quarter-notes (or fractions thereof)
+    durations: [ 1/4, 1/2, 1/3, 1, 3/2, 2 ], # 1 = quarter-note
     weights: [ 1, 1, 1, 1, 1, 1 ],
-    groups: {},
-    smallest: 1/128
+    groups: {}, # number of notes, keyed by a duration
+    smallest: 1/128 # lower threshold for adding to the phrase
 }
 r = Rhythm(**params)
 ```
