@@ -47,7 +47,7 @@ import random
 from random_rhythms import Rhythm
 
 r = Rhythm(measure_size=5 groups={1/3: 3, 1/2: 2})
-motifs = [ r.motif() for x in range(4) ]
+motifs = [ r.motif() for _ in range(4) ]
 
 sc = scale.WholeToneScale('C4')
 
